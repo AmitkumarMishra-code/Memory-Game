@@ -19,7 +19,7 @@ export default function GameGrid(props) {
             }
         }
         newArray = newArray.map(value => value > 7 ? value - 8 : value)
-        console.log(newArray)
+        // console.log(newArray)
         return newArray
     }
     useEffect(() => {
@@ -50,7 +50,7 @@ export default function GameGrid(props) {
     function validateClick(selectedCell, setState, disableClick) {
 
         if (selectedCell === selected[0][0]) {
-            console.log('paired')
+            // console.log('paired')
             setState(true, 1)
             selected[0][1](true, 1)
             disableClick(true)
