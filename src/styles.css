@@ -50,25 +50,26 @@ img {
 
 .grid {
     display: flex;
-    width: 35%;
-    height: 400px;
+    width: 40%;
+    height: 40%;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 15px;
     border-radius: 12px;
     background-image: linear-gradient( 109.6deg, rgba(96, 221, 142, 1) 11.2%, rgba(24, 138, 141, 1) 91.1%);
-    gap: 5px;
+    gap: 1rem;
 }
 
 .cell {
-    width: 24%;
-    height: 24%;
+    width: 20%;
+    height: 20%;
     border-radius: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #0c3939;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
 }
 
 svg {
@@ -85,11 +86,12 @@ svg {
     border: none;
     font-family: 'Orbitron';
     font-weight: 400;
+    box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.35);
 }
 
 .hidden {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,4 +103,39 @@ svg {
 .header {
     font-weight: 900;
     font-size: 25px;
+}
+
+@media only screen and (min-width:420px) and (max-width:800px) {
+    .grid {
+        width: 90%;
+        height: 90%;
+    }
+    .display-area {
+        margin-top: 100px;
+    }
+    .header {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:419px) {
+    .grid {
+        width: 95%;
+        height: 95%;
+        gap: 0.5rem;
+    }
+    .header {
+        font-size: 18px;
+    }
+    .score-bar {
+        font-size: 12px;
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+    .restart {
+        font-size: 12px;
+    }
+    .display-area {
+        margin-top: 100px;
+    }
 }
