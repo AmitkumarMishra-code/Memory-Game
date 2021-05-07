@@ -74,7 +74,7 @@ export default function GameGrid(props) {
     }
     return (
         <div className="grid" style={{ pointerEvents: pointerEvents }}>
-            {gridArray.map(cell => <Cell value={cell} method={clickHandler} disableClick = {false} opacity = {0} backgroundColor = {'rgba(96, 221, 142, 1)'}/>)}
+            {gridArray.map((cell, idx) => <Cell key = {idx} value={cell} method={clickHandler} disableClick = {false} opacity = {0} backgroundColor = {'rgba(96, 221, 142, 1)'}/>)}
         </div>
     )
 }
