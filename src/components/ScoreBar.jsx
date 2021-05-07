@@ -20,6 +20,7 @@ export default function ScoreBar(props) {
             props.gameStart(false)
             setButtonDisabled(false)
         }
+        // eslint-disable-next-line
     }, [score])
 
     useEffect(() => { setMoves(props.moves) }, [props.moves])

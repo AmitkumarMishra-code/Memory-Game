@@ -24,14 +24,9 @@ export default function GameGrid(props) {
     }
     useEffect(() => {
         setGridArray(getRandomArray())
+        // eslint-disable-next-line
     }, [])
 
-    // useEffect(() => {
-    //     if(props.gameStart){
-    //         score = 0
-    //         setGridArray(getRandomArray())
-    //     }
-    // },[props.gameStart])
 
     let clickHandler = (selectedCell, setState, disableClick) => {
         if(props.firstClick){
