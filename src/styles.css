@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url(/src/bgPattern.png);
+    font-family: 'Orbitron';
+}
+
+img {
+    width: 100%;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.score-bar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-weight: 400;
+}
+
+.display-area {
+    display: flex;
+    width: 100%;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+    width: 35%;
+    height: 400px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 12px;
+    background-image: linear-gradient( 109.6deg, rgba(96, 221, 142, 1) 11.2%, rgba(24, 138, 141, 1) 91.1%);
+    gap: 5px;
+}
+
+.cell {
+    width: 24%;
+    height: 24%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c3939;
+}
+
+svg {
+    width: 80%;
+    height: 80%;
+}
+
+.restart {
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    outline: none;
+    border: none;
+    font-family: 'Orbitron';
+    font-weight: 400;
+}
+
+.hidden {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: rgba(96, 221, 142, 1);
+    transition: opacity 200ms ease-in;
+}
+
+.header {
+    font-weight: 900;
+    font-size: 25px;
+}
