@@ -30,7 +30,7 @@ img {
     align-items: center;
     flex-direction: column;
     gap: 40px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .score-bar {
@@ -43,7 +43,7 @@ img {
 .display-area {
     display: flex;
     width: 100%;
-    padding: 50px;
+    padding: 25px 50px;
     justify-content: center;
     align-items: center;
 }
@@ -55,7 +55,7 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 10px;
     border-radius: 12px;
     background-image: linear-gradient( 109.6deg, rgba(96, 221, 142, 1) 11.2%, rgba(24, 138, 141, 1) 91.1%);
     gap: 1rem;
