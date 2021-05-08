@@ -24,12 +24,13 @@ export default function GameGrid(props) {
     }
     useEffect(() => {
         setGridArray(getRandomArray())
+        score = 0
         // eslint-disable-next-line
     }, [])
 
 
     let clickHandler = (selectedCell, setState, disableClick) => {
-        if(props.firstClick){
+        if (props.firstClick) {
             props.startGame(false)
         }
         if (!selected.length) {
@@ -74,7 +75,7 @@ export default function GameGrid(props) {
     }
     return (
         <div className="grid" style={{ pointerEvents: pointerEvents }}>
-            {gridArray.map((cell, idx) => <Cell key = {idx} value={cell} method={clickHandler} disableClick = {false} opacity = {0} backgroundColor = {'rgba(96, 221, 142, 1)'}/>)}
+            {gridArray.map((cell, idx) => <Cell key={idx} value={cell} method={clickHandler} disableClick={false} opacity={0} backgroundColor={'rgba(96, 221, 142, 1)'} />)}
         </div>
     )
 }

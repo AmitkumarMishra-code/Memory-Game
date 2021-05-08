@@ -33,12 +33,12 @@ export default function ScoreBar(props) {
         return () => clearInterval(intervalId)
     }
     let restartGame = () => {
+        props.reset()
         setScore(0)
         setTime(0)
         clearInterval(intervalId)
         setMoves(0)
         props.gameStart(true)
-        props.reset()
     }
     return (
         <div className='score-bar'>
