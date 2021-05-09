@@ -39,6 +39,7 @@ img {
     width: 100%;
     justify-content: space-around;
     font-weight: 400;
+    align-items: center;
 }
 
 .display-area {
@@ -114,6 +115,7 @@ svg {
     .grid {
         width: 95%;
         height: 95%;
+        gap: 0.5rem;
     }
     .display-area {
         margin-top: 70px;
@@ -128,7 +130,7 @@ svg {
     }
 }
 
-@media only screen and (max-width:419px) {
+@media only screen and (max-width:420px) {
     .grid {
         width: 90%;
         height: 90%;
