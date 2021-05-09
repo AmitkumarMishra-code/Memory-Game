@@ -9,6 +9,7 @@ body {
     height: 100vh;
     background-image: url(/src/bgPattern.png);
     font-family: 'Orbitron';
+    overflow: hidden;
 }
 
 img {
@@ -46,24 +47,28 @@ img {
     padding: 25px 50px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.display-area .win-message {
+    font-size: 22px;
 }
 
 .grid {
     display: flex;
     width: 40%;
-    height: 40%;
+    height: 45%;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     border-radius: 12px;
     background-image: linear-gradient( 109.6deg, rgba(96, 221, 142, 1) 11.2%, rgba(24, 138, 141, 1) 91.1%);
     gap: 1rem;
 }
 
 .cell {
-    width: 20%;
-    height: 20%;
+    width: 22%;
     border-radius: 12px;
     display: flex;
     justify-content: center;
@@ -107,21 +112,26 @@ svg {
 
 @media only screen and (min-width:420px) and (max-width:800px) {
     .grid {
-        width: 90%;
-        height: 90%;
+        width: 95%;
+        height: 95%;
     }
     .display-area {
-        margin-top: 100px;
+        margin-top: 70px;
+        padding: 20px 30px;
     }
     .header {
         font-size: 20px;
+    }
+    .display-area .win-message {
+        font-size: 20px;
+        padding: 10px;
     }
 }
 
 @media only screen and (max-width:419px) {
     .grid {
-        width: 95%;
-        height: 95%;
+        width: 90%;
+        height: 90%;
         gap: 0.5rem;
     }
     .header {
@@ -136,6 +146,11 @@ svg {
         font-size: 12px;
     }
     .display-area {
-        margin-top: 100px;
+        margin-top: 50px;
+        padding: 0;
+    }
+    .display-area .win-message {
+        font-size: 14px;
+        padding: 10px;
     }
 }
