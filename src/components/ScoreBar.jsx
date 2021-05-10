@@ -42,9 +42,9 @@ export default function ScoreBar(props) {
     }
     return (
         <div className='score-bar'>
-            <p>Time : {time}s</p>
-            <p>Moves: {moves}</p>
-            <p>Score: {score}</p>
+            <div className="time"><p>Time :</p><p className = 'dynamic'>{time}s</p></div>
+            <div className="moves"><p>Moves:</p><p className = 'dynamic'>{moves}</p></div>
+            <div className="score"><p>Score:</p><p className = 'dynamic'>{score}</p></div>
             <button className='restart' onClick={restartGame} disabled={buttonDisabled}>Restart</button>
         </div>
     )
