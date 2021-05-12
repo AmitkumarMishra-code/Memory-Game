@@ -157,8 +157,11 @@ svg {
     }
     .score-bar {
         font-size: 12px;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 0px 20px;
+    }
+    .dynamic {
+        width: 30%;
     }
     .restart {
         font-size: 12px;
